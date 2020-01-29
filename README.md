@@ -74,7 +74,7 @@ nots-MacBook-Pro:r-lesson ever$ nano README.md
 
 
 This repository contains analysis of life expectancy vs GDP.
-
+Liliane Khoryati  is interested in population growth.
 
 
 
