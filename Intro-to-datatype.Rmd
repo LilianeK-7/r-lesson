@@ -1,0 +1,88 @@
+---
+title: "Analysis experiment"
+author: "Liliane Khoryati"
+date: "1/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+1+2
+```
+I saw that 1+2=3
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+experiment <- read.csv(file = "data/experiment.csv")
+```
+
+
+```{r}
+experiment2 <- experiment2
+experiment2$protein_names <- paste("Protein Name:", experiment2$protein_names)
+```
+``` {r}
+experiment$protein_names
+experiment$intensity + 1
+paste("Protein name:", experiment$protein_names)
+```
+```{r}
+experiment$intensity +experiment$intensity
+experiment$protein_names + experiment$intensity
+```
+
+```{r}
+c(1, 2, "f")
+```
+
+```{r}
+list(3.14, TRUE, "banana")
+list_example <- list(title = "Numbers", numbers=c(1, 2, 3), data_exist=TRUE)
+```
+
+```{r}
+fruits <- c("apple", "apple", "banana", "grape", "grape")
+factor_fruits <- factor(fruits)
+```
+
+```{r}
+mydata <- c("case", "control", "case", "control")
+factor_mydata <- factor(mydata, levels = c("control", "case"))
+```
+
+```{r}
+replicate <- c(1, 2, 1)
+experiment <- cbind(experiment, replicate)
+```
+
+```{r}
+levels(experiment$protein_names) <- c(levels(experiment$protein_names), "FOXO3")
+new_protein <- list(protein_names="FOXO3",
+                   intensity=1.5,
+                   in_membrane=0,
+                   replicate=2
+                   )
+experiment <- rbind(experiment, new_protein)
+```
+```{r}
+experiment[,-4]
+```

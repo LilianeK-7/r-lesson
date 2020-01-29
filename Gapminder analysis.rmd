@@ -1,0 +1,12 @@
+---
+title: "Gapminder analysis"
+author: "Liliane Khoryati"
+date: "1/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
